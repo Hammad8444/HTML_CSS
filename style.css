@@ -1,0 +1,280 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* MY Code */
+
+/* Header */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+header img {
+    width: 50px;
+    height: 25px;
+    padding: 12.5px 0;
+}
+
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #737373;
+    padding: 16.5px 25px;
+    line-height: 50px;
+    font-size: 15px;
+}
+header nav ul li select {
+    border: none;
+    color: #737373;
+    font-size: 15px;
+    padding: 16px;
+
+} 
+header nav ul li a:hover  {
+    background-color: #e7e7e7;
+    color: #111;
+}
+header nav ul li select:hover {
+    background-color: #e7e7e7;
+    color: #111;
+    cursor: pointer;
+    
+} 
+
+/* Main */
+.background-img {
+    background-image: url('img/background.jpg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 100% 100%;
+}
+.background-img section {
+    width: 80%;
+    margin: 0 auto;
+}
+.img-logo-text {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    padding-top: 7%;
+    
+}
+.img-logo-text img {
+    width: 50px;
+    height: 60px;
+}
+.img-logo-text p {
+    font-size: 58px;
+    line-height: 80px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-left: 30px;
+}
+.img-logo-downtext p {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 5px #111;
+    font-weight: 400;
+    
+}
+button {
+    background-color: #ffa500;
+    color: #fff;
+    border: 1px solid #ffa500;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.between-text {
+    margin: 50px 0;
+}
+
+.between-text h2 {
+    font-size: 40px;
+    color: #dc8054;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.between-text p {
+    font-size: 20px;
+    line-height: 25px;
+    color: #737373;
+    text-align: center;
+}
+
+
+.down-images {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.down-images .plate {
+    width: 33.33%;
+    height: 100%;
+    background-image: url('img/plate.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.down-images .cofee {
+    width: 33.33%;
+    height: 100%;
+    background-image: url('img/cofee.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.down-images .grapes {
+    width: 33.33%;
+    height: 100%;
+    background-image: url('img/grapes.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+
+.down-images div p {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin: 140px 0;
+    text-shadow: 2px 2px 5px #111;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+footer h3 {
+    font-size: 40px;
+    color: #dc8054;
+    text-align: center;
+    padding-top: 50px;
+    
+}
